@@ -99,9 +99,11 @@ class FaceDetector(object):
                             2, cv2.LINE_AA)
 
         return frame
+    '''
     def audio_run(self):
         mat_eng = matlab.engine.start_matlab()
         mat_eng.audio_realtime2()
+    '''
     def run(self):
         global deg_all
         deg_all = []
